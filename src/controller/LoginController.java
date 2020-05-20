@@ -9,10 +9,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import businesslogic.ValidateUser;
 
 
 
-@WebServlet(urlPatterns= {"/login"})
+
+@WebServlet(urlPatterns = {"/login"})
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -29,7 +31,7 @@ public class LoginController extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/*	String email = request.getParameter("email"); //  get the email value from the jsp/html page
+			String email = request.getParameter("email"); //  get the email value from the jsp/html page
 		String password = request.getParameter("password"); //  get the password value from the jsp/html page
 
 		ValidateUser validateUser = new ValidateUser();
@@ -44,7 +46,7 @@ public class LoginController extends HttpServlet {
 		
 		
 		
-	*/	
+		
 	}
 
 }
